@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="Create your account with a secure, accessible signup experience." />
+  <title>Create your account — Northstar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="brand-panel" aria-label="Northstar introduction">
+      <a class="brand" href="#" aria-label="Northstar home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 3 24.7 15.3 37 20l-12.3 4.7L20 37l-4.7-12.3L3 20l12.3-4.7L20 3Z" fill="currentColor"/><circle cx="20" cy="20" r="4" fill="#0b1020"/></svg></span>
+        <span>northstar<span class="brand-period">.</span></span>
+      </a>
+      <div class="brand-copy">
+        <span class="eyebrow"><span class="pulse"></span> YOUR NEXT CHAPTER STARTS HERE</span>
+        <h1>Make room for<br><span>what’s next.</span></h1>
+        <p>One thoughtful workspace for your ideas, your team, and the work that moves you forward.</p>
+      </div>
+      <div class="testimonial">
+        <div class="avatar-stack" aria-hidden="true"><span>AM</span><span>JR</span><span>SK</span><span>+</span></div>
+        <p><strong>Made for people building something great.</strong><br><span>Join 12,000+ curious minds.</span></p>
+      </div>
+      <div class="decor decor-one"></div><div class="decor decor-two"></div>
+      <div class="panel-footer"><span>DESIGNED FOR YOUR MOMENTUM</span><span>01 — 03</span></div>
+    </section>
+
+    <section class="form-panel" aria-labelledby="form-title">
+      <div class="form-topline"><span>Already have an account?</span><a href="#" id="signin-link">Sign in <span aria-hidden="true">↗</span></a></div>
+      <div class="form-content">
+        <div class="mobile-brand brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 3 24.7 15.3 37 20l-12.3 4.7L20 37l-4.7-12.3L3 20l12.3-4.7L20 3Z" fill="currentColor"/><circle cx="20" cy="20" r="4" fill="#0b1020"/></svg></span><span>northstar<span class="brand-period">.</span></span></div>
+        <span class="step-label">GET STARTED · STEP 01 OF 01</span>
+        <h2 id="form-title">Create your account</h2>
+        <p class="form-subtitle">Start with the basics. You can personalize everything later.</p>
+
+        <button class="social-button" type="button" id="google-button"><span class="google-g" aria-hidden="true">G</span> Continue with Google <span class="social-arrow" aria-hidden="true">↗</span></button>
+        <div class="separator"><span></span><small>or sign up with email</small><span></span></div>
+
+        <form id="signup-form" novalidate>
+          <div class="field">
+            <label for="full-name">Full name</label>
+            <div class="input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.3-4 2.6-6 7-6s6.7 2 7 6"/></svg><input id="full-name" name="name" type="text" autocomplete="name" placeholder="e.g. Alex Morgan" aria-describedby="name-hint name-error" required maxlength="80" /></div>
+            <div class="field-meta"><span class="hint" id="name-hint">Use your first and last name.</span><span class="error" id="name-error"></span></div>
+          </div>
+
+          <div class="field">
+            <label for="email">Work email</label>
+            <div class="input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg><input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@company.com" aria-describedby="email-hint email-error" required maxlength="254" /></div>
+            <div class="field-meta"><span class="hint" id="email-hint">We’ll only use this for your account.</span><span class="error" id="email-error"></span></div>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg><input id="password" name="password" type="password" autocomplete="new-password" placeholder="Create a strong password" aria-describedby="password-hint password-error password-strength-text" required /></div>
+            <button class="password-toggle" type="button" id="toggle-password" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.2-6 9.5-6 9.5 6 9.5 6-3.2 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/></svg></button>
+            <div class="strength" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <div class="field-meta"><span class="hint" id="password-hint">At least 8 characters with mixed character types.</span><span class="error" id="password-error"></span></div>
+            <p class="strength-label" id="password-strength-text" aria-live="polite">Password strength <strong>—</strong></p>
+          </div>
+
+          <label class="checkbox-row"><input type="checkbox" id="terms" name="terms" aria-describedby="terms-error" /><span class="custom-check" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3 8 3.2 3.2L13 4.5"/></svg></span><span>I agree to the <a href="#" class="policy-link">Terms of Service</a> and <a href="#" class="policy-link">Privacy Policy</a>.</span></label>
+          <div class="error terms-error" id="terms-error" role="status"></div>
+
+          <button class="submit-button" type="submit"><span>Create account</span><span aria-hidden="true">→</span></button>
+          <p class="security-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 19 6v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg>Your information is encrypted and secure.</p>
+          <section class="success-panel" id="success-panel" role="status" aria-live="polite" hidden><span class="success-icon">✓</span><div><strong id="success-title">Account created successfully!</strong><p id="success-message">Welcome to Northstar.</p><p id="created-profile"></p><button type="button" class="dashboard-button" id="dashboard-button">Open dashboard →</button><button type="button" class="text-button" id="create-another-button">Create another demo account</button></div></section><section class="dashboard-panel" id="dashboard-panel" hidden><span class="step-label">WORKSPACE READY</span><h3>Welcome aboard<span class="brand-period">.</span></h3><p>Your demo workspace is ready.</p><div class="dashboard-card"><strong id="dashboard-user-name">New member</strong><p id="dashboard-user-email">you@example.com</p><span class="active-pill">● Active</span></div><button type="button" class="submit-button" id="back-to-form">Back to signup form →</button><p class="demo-disclaimer">Demo only — no real server account is created.</p></section>
+        </form>
+        <p class="legal-note">By creating an account, you acknowledge our <a href="#" class="policy-link">Privacy Policy</a>.</p>
+      </div>
+      <footer class="form-footer"><span>© 2026 Northstar, Inc.</span><span><i></i> All systems operational</span></footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
